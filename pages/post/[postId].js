@@ -1,11 +1,7 @@
-import { useRouter } from 'next/router'
-import Post from '../../components/Post'
+import GridLayout from "../../layouts/grid-with-modal";
 
 const PostPage = () => {
-  const router = useRouter()
-  const { postId } = router.query
+  return <GridLayout />;
+};
 
-  return <Post id={postId} pathname={router.pathname} />
-}
-
-export default PostPage
+export default PostPage;
